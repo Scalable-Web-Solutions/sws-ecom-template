@@ -1,0 +1,1 @@
+export const experiments: string[] = ["ect_hero"];
