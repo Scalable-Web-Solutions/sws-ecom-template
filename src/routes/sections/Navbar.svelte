@@ -58,7 +58,7 @@
   </div>
 
   <!-- 5rem total height minus 1.75rem strip -->
-  <div class="container mx-auto flex justify-between items-center h-[calc(5rem-1.75rem)] px-4">
+  <div class="container mx-auto flex justify-between items-center h-[calc(7rem-1.75rem)] px-4">
     <div class="font-semibold text-2xl">BrandName</div>
 
     <div class="flex items-center gap-4 font-semibold">

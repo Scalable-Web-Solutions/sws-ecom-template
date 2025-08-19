@@ -2,7 +2,7 @@
     import { AppleIcon, Clock, LucideReceiptText, Package, ReceiptEuroIcon } from "lucide-svelte";
 
 </script>
-<div class="h-[50vh] bg-white">
+<div class="h-[50vh] bg-blue-500 text-white">
     <div class="flex flex-col items-center p-10 h-full">
         <div class="text text-3xl font-bold">
             Our commitment to you
@@ -25,6 +25,6 @@
                 <p class="text-sm">30-day money back guarantee</p>
             </div>
         </div>
-        <button class="bg-black text-white px-5 py-2 rounded-full font-semibold mr-[26px]">ORDER NOW</button>
+        <button class="bg-white text-black px-5 py-2 rounded-full font-semibold mr-[26px]">ORDER NOW</button>
     </div>
 </div>
