@@ -1,6 +1,7 @@
 <script lang='ts'>
     import NavCta from "./components/NavCta.svelte";
     import Objections from "./components/Objections.svelte";
+    import Footer from "./sections/Footer.svelte";
     import Hero from "./sections/Hero.svelte";
     import Information from "./sections/Information.svelte";
     import Navbar from "./sections/Navbar.svelte";
@@ -73,3 +74,4 @@
 <ProductTaste/>
 <Reviews reviews={reviews} />
 <ProductCarousel products={products} />
+<Footer/>
