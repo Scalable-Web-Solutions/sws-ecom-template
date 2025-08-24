@@ -1,5 +1,6 @@
 <script lang="ts">
   import { LogIn, Search, ShoppingCart } from "lucide-svelte";
+  import { totalQty } from "$lib/stores/cart";
   import { onMount, onDestroy } from "svelte";
 
   let showNav = true;
@@ -59,21 +60,22 @@
 
   <!-- 5rem total height minus 1.75rem strip -->
   <div class="container mx-auto flex justify-between items-center h-[calc(7rem-1.75rem)] px-4">
-    <div class="font-semibold text-2xl">BrandName</div>
+    <a href="/" class="font-semibold text-2xl">BrandName</a>
 
     <div class="flex items-center gap-4 font-semibold">
-      <a>ONE</a>
-      <a>TWO</a>
-      <a>THREE</a>
-      <a class="text-blue-500">GET STARTED</a>
+      <a href="/collection">COLLECTION</a>
+      <a href="/">TWO</a>
+      <a href="/">THREE</a>
+      <a class="text-blue-500" href="/">GET STARTED</a>
     </div>
 
     <div class="flex items-center gap-6">
       <Search />
-      <div class="flex items-center gap-1">
+      <a href="/checkout" class="flex items-center gap-1">
+
         <ShoppingCart />
-        <span>(0)</span>
-      </div>
+        <span>{$totalQty}</span>
+      </a>
       <div class="flex gap-2 items-center">
         <LogIn />
         <span class="font-semibold">Login</span>

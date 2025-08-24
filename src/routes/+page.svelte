@@ -67,7 +67,6 @@
   ];
 </script>
 <NavCta/>
-<Navbar/>
 <Hero/> 
 <Objections/>
 <Information/>

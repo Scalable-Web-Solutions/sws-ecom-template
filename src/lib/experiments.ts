@@ -5,7 +5,7 @@ export const experiments: ExperimentsConfig = {
     id: 'ect_hero',
     variants: ['control', 'Hero', 'HeroAlt'],
 
-    // weight: [0.5, 0.25, 0.25],
+    weight: [0.80, 0.10, 0.10],
     botVariant: 'control',
     enabled: true
   },

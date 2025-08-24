@@ -19,6 +19,7 @@
     import FixedCta from './components/FixedCta.svelte';
     import { writable, type Writable } from 'svelte/store';
     import { json } from '@sveltejs/kit';
+    import Navbar from './sections/Navbar.svelte';
 	
 	const { data, children } = $props<{
     	data: { experiments: Record<string, string>; anonId?: string };
@@ -62,6 +63,8 @@
 </svelte:head>
 
 <div class="poppins">
+	<Navbar/>
 	{@render children?.()}
+	
 	<FixedCta/>
 </div>
