@@ -1,30 +1,40 @@
 <script>
-    import { AppleIcon, Clock, LucideReceiptText, Package, ReceiptEuroIcon } from "lucide-svelte";
-
+  import { Package, Clock, Receipt, ShieldCheck } from "lucide-svelte";
 </script>
-<div class="h-[50vh] bg-blue-500 text-white">
-    <div class="flex flex-col items-center p-10 h-full">
-        <div class="text text-3xl font-bold">
-            Our commitment to you
-        </div>
-        <div class="text font-semibold h-full flex gap-20">
-            <div class="flex flex-col items-center justify-center">
-                <Package class="w-15 h-15"/>
-                <h1 class="text-2xl">Free Shipping*</h1>
-                <p class="text-sm">*Free shipping on all orders over $15</p>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-                <Clock class="w-15 h-15"/>
-                <h1 class="text-2xl">24/7 Support</h1>
-                <p class="text-sm">24/7 support available</p>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-                <LucideReceiptText class="w-15 h-15"/>
-                <h1 class="text-2xl">Money Back Guarantee</h1>
 
-                <p class="text-sm">30-day money back guarantee</p>
-            </div>
-        </div>
-        <button class="bg-white text-black px-5 py-2 rounded-full font-semibold mr-[26px]">ORDER NOW</button>
+<section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl sm:text-4xl font-bold mb-12">Our Commitment to You</h2>
+
+    <!-- Features -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12">
+      <div class="flex flex-col items-center space-y-3">
+        <Package class="w-12 h-12" />
+        <h3 class="text-xl font-semibold">Free Shipping*</h3>
+        <p class="text-sm text-white/90">On all orders over $15</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <Clock class="w-12 h-12" />
+        <h3 class="text-xl font-semibold">24/7 Support</h3>
+        <p class="text-sm text-white/90">Always available for you</p>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <Receipt class="w-12 h-12" />
+        <h3 class="text-xl font-semibold">Money Back Guarantee</h3>
+        <p class="text-sm text-white/90">30-day hassle-free returns</p>
+      </div>
     </div>
-</div>
+
+    <!-- CTA -->
+    <a
+      href="/collection"
+      data-cta="commitment_cta"
+      class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-blue-700 font-semibold shadow-lg hover:bg-slate-100 transition"
+    >
+      Order Now
+    </a>
+  </div>
+</section>
